@@ -19,11 +19,18 @@ class App extends Component {
         {
           id: 2,
           taskName: "default task 2",
+          completed: "false"
+        },
+        {
+          id: 3,
+          taskName: "default task 3",
           completed: "true"
         }
       ]
     };
-    this.handleTaskSubmit = this.handleTaskSubmit.bind(this)
+    this.handleTaskSubmit = this.handleTaskSubmit.bind(this);
+    this.handleTaskDelete = this.handleTaskDelete.bind(this);
+    this.handleTaskDone = this.handleTaskDone.bind(this);
   }
 
   handleTaskSubmit(todo){
@@ -33,9 +40,36 @@ class App extends Component {
     this.setState({todos: newTodos});
   }
 
-  handleDeleteTask(todo) {
+  handleTaskDelete(todoId) {
 
+    let todos = this.state.todos;
+
+    let targetId = todoId;
+    let newTodos = todos.filter(function(todo){
+      return todo.id !== targetId
+    });
+    this.setState({todos: newTodos})
+    console.log("task with id" + todoId + " is deleted.")
   }
+
+  handleTaskDone(todoId) {
+
+    var todos = this.state.todos;
+
+    todos.forEach(function(todo, index, todos) {
+      if (todo.id === todoId) {
+        if(todo.completed === "false") {
+          todo.completed = "true"
+        }else if(todo.completed === "true"){
+          todo.completed = "false"
+        }
+      }
+    });
+
+    this.setState(todos);
+    console.log("task with id" + todoId + " is done.")
+  }
+
 
   render() {
     return (
@@ -50,7 +84,11 @@ class App extends Component {
 
         <TaskForm onTaskSubmit={this.handleTaskSubmit} />
 
-        <TodoList todos={this.state.todos}/>
+        <TodoList
+          onDeleteButtonClick={this.handleTaskDelete}
+          onDoneButtonClick={this.handleTaskDone}
+          todos={this.state.todos}
+        />
 
       </div>
     );
