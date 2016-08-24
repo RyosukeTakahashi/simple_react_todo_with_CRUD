@@ -1,6 +1,14 @@
 // eslint-disable-next-line
 import React, { Component, PropTypes } from 'react';
 
+import TextField from 'material-ui/TextField'
+import RaisedButton from 'material-ui/RaisedButton'
+import AddIcon from 'material-ui/svg-icons/av/playlist-add'
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+
+
 class TaskForm extends Component {
   
   //cst for constructor
@@ -27,23 +35,38 @@ class TaskForm extends Component {
     this.props.onTaskSubmit({
       taskName: taskName,
       id: Date.now,
-      completed: "false"
+      completed: false
     });
     this.setState({taskName:''});
-    console.log('handleSubmit in taskform.js completed')
-
   }
 
+  //left 34px
   render() {
     return (
       <form className="TaskForm" onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          placeholder="New Task name"
-          value={this.state.taskName}
-          onChange={this.handleInputBoxChange}
-        />
-        <input type="submit" value="Add Task"/>
+        <MuiThemeProvider muiTheme={getMuiTheme({})}>
+          <TextField
+            type="text"
+            placeholder="New Task name"
+            value={this.state.taskName}
+            onChange={this.handleInputBoxChange}
+            style={{
+            marginLeft:"58px",
+            width:"240px"}}
+          />
+        </MuiThemeProvider>
+
+        <MuiThemeProvider>
+          <RaisedButton
+            type="submit"
+            label="Add Task"
+            labelPosition="before"
+            icon={<AddIcon />}
+            style={{marginLeft:"24px"}}
+          />
+        </MuiThemeProvider>
+
+
       </form>
     );
   }

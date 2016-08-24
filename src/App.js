@@ -9,28 +9,33 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Welcome to React Ryo! This is the start!",
+      title: "Sample Todo App by React. No flux or redux.",
       todos:[
         {
           id: 1,
           taskName: "default task 1",
-          completed: "false"
+          completed: false,
+          inputDisabled: true
         },
         {
           id: 2,
           taskName: "default task 2",
-          completed: "false"
+          completed: false,
+          inputDisabled: true
         },
         {
           id: 3,
           taskName: "default task 3",
-          completed: "true"
+          completed: true,
+          inputDisabled: true
         }
       ]
     };
     this.handleTaskSubmit = this.handleTaskSubmit.bind(this);
     this.handleTaskDelete = this.handleTaskDelete.bind(this);
     this.handleTaskDone = this.handleTaskDone.bind(this);
+    this.handleInputBoxClick = this.handleInputBoxClick.bind(this);
+    this.handleTaskNameEdit = this.handleTaskNameEdit.bind(this);
   }
 
   handleTaskSubmit(todo){
@@ -38,6 +43,8 @@ class App extends Component {
     let todos = this.state.todos;
     let newTodos = todos.concat([todo])
     this.setState({todos: newTodos});
+
+    console.log("new task " + todo.taskName + " added")
   }
 
   handleTaskDelete(todoId) {
@@ -49,25 +56,50 @@ class App extends Component {
       return todo.id !== targetId
     });
     this.setState({todos: newTodos})
-    console.log("task with id" + todoId + " is deleted.")
+    console.log("task id " + todoId + " is deleted.")
   }
 
   handleTaskDone(todoId) {
 
     var todos = this.state.todos;
 
+    var completionOfTodoThatChanged = false
     todos.forEach(function(todo, index, todos) {
       if (todo.id === todoId) {
-        if(todo.completed === "false") {
-          todo.completed = "true"
-        }else if(todo.completed === "true"){
-          todo.completed = "false"
-        }
+        todo.completed = !todo.completed
+        completionOfTodoThatChanged = todo.completed
       }
     });
 
     this.setState(todos);
-    console.log("task with id" + todoId + " is done.")
+    console.log("task id " + todoId + " completed: " + completionOfTodoThatChanged)
+  }
+
+  handleInputBoxClick(todoId) {
+
+    var todos = this.state.todos;
+
+    todos.forEach(function(todo, index, todos) {
+      if (todo.id === todoId) {
+        todo.inputDisabled = !todo.inputDisabled
+      }
+    });
+
+    this.setState(todos)
+  }
+
+  handleTaskNameEdit(todoId, taskName) {
+
+    var todos = this.state.todos;
+
+    todos.forEach(function(todo, index, todos) {
+      if (todo.id === todoId) {
+        todo.taskName = taskName
+      }
+    });
+
+    this.setState(todos)
+
   }
 
 
@@ -79,7 +111,7 @@ class App extends Component {
           <h2>{this.state.title}</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload. {this.props.name}
+          Add task with the input box below.
         </p>
 
         <TaskForm onTaskSubmit={this.handleTaskSubmit} />
@@ -87,6 +119,8 @@ class App extends Component {
         <TodoList
           onDeleteButtonClick={this.handleTaskDelete}
           onDoneButtonClick={this.handleTaskDone}
+          onInputBoxClick={this.handleInputBoxClick}
+          onTaskNameEdit={this.handleTaskNameEdit}
           todos={this.state.todos}
         />
 

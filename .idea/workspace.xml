@@ -2,11 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f2a99f2-44b7-46f4-8db7-542981482382" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Todo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react-dom/package.json.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react-dom/package.json.rej" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactChildrenMutationWarningDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMDebugTool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMInstrumentation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMNullInputValuePropDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMUnknownPropertyDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactHostOperationHistoryDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactInvalidSetStateWarningDevTool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/createHierarchyRenderer.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom-server.js" afterPath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom-server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom-server.min.js" afterPath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom-server.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom.js" afterPath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom.min.js" afterPath="$PROJECT_DIR$/node_modules/react-dom/dist/react-dom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-dom/package.json" afterPath="$PROJECT_DIR$/node_modules/react-dom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.min.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react.min.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/DOMPropertyOperations.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/DOMPropertyOperations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/EventPluginHub.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/EventPluginHub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactChildReconciler.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactChildReconciler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentBrowserEnvironment.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentBrowserEnvironment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentEnvironment.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentEnvironment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeDevtool.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeDevtool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeTestUtils.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeTestUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactCompositeComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactCompositeComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOM.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOM.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponentTree.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponentTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMEmptyComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMEmptyComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFactories.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFactories.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFiber.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFiber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMInput.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMInput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMSelect.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMSelect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMTextComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMTextComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDebugTool.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDebugTool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactElement.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactElement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactElementValidator.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactElementValidator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactMount.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactMount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactMultiChild.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactMultiChild.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeBaseComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeBaseComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeComponentEnvironment.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeComponentEnvironment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeMount.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeMount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeTextComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeTextComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactPropTypes.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactPropTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactReconciler.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactReconciler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactRef.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactRef.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactServerRendering.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactServerRendering.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactSimpleEmptyComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactSimpleEmptyComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactTestMount.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactTestMount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactTestUtils.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactTestUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactVersion.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactVersion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ResponderEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ResponderEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/SimpleEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/SimpleEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/SyntheticEvent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/SyntheticEvent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/checkReactTypeSpec.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/checkReactTypeSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/createReactNativeComponentClass.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/createReactNativeComponentClass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/escapeTextContentForBrowser.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/escapeTextContentForBrowser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/flattenChildren.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/flattenChildren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/instantiateReactComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/instantiateReactComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/onlyChild.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/onlyChild.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/package.json" afterPath="$PROJECT_DIR$/node_modules/react/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TaskForm.js" afterPath="$PROJECT_DIR$/src/TaskForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TodoList.js" afterPath="$PROJECT_DIR$/src/TodoList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="reactTodoApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +94,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.6938776">
+              <caret line="113" column="44" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TodoList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TodoList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TodoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5393586">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TaskForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -57,8 +133,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/TaskForm.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/Header.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/MyAwesomeReactComponent.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/TodoList.js" />
+        <option value="$PROJECT_DIR$/src/TaskForm.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
@@ -69,9 +151,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="276" />
+    <option name="x" value="149" />
     <option name="y" value="-1417" />
-    <option name="width" value="1147" />
+    <option name="width" value="1274" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -360,10 +442,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="276" y="-1417" width="1147" height="1417" extended-state="0" />
-    <editor active="false" />
+    <frame x="149" y="-1417" width="1274" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17375566" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22402598" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -467,7 +549,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
+    <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -475,26 +557,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TaskForm.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30708662">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.1641791">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14577259">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.058309037">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TaskForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TodoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5393586">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6938776">
+          <caret line="113" column="44" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
           <folding />
         </state>
       </provider>

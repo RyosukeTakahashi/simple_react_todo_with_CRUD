@@ -1,15 +1,22 @@
 // eslint-disable-next-line
 import React, { Component, PropTypes } from 'react';
+import TextField from 'material-ui/TextField'
+import RaisedButton from 'material-ui/RaisedButton'
+import DeleteIcon from 'material-ui/svg-icons/action/delete'
+import CheckboxIconChecked from 'material-ui/svg-icons/toggle/check-box'
+import CheckboxIconUnchecked from 'material-ui/svg-icons/toggle/check-box-outline-blank'
+import IconButton from 'material-ui/IconButton'
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+
+
+const muiTheme = getMuiTheme({
+
+})
+
 
 class TodoList extends Component {
-
-  //cst for constructor
-  //sfc for stateless functional component
-  constructor(props) {
-    super(props);
-    this.handleDeleteButtonClick = this.handleDeleteButtonClick.bind(this);
-  }
-
 
   handleDeleteButtonClick(todoId){
     // propsを使って下位階層のコンポーネントにfuncを持ってきている。
@@ -19,27 +26,66 @@ class TodoList extends Component {
   }
 
   handleDoneButtonClick(todoId){
-    // propsを使って下位階層のコンポーネントにfuncを持ってきている。
-    // これで、上位階層が（Appクラス）持っているstateを更新
     console.log("Done button clicked. Task ID: " + todoId)
     this.props.onDoneButtonClick(todoId)
   }
+
+  handleInputBoxClick(todoId){
+    console.log("Input box clicked. Task ID: " + todoId)
+    this.props.onInputBoxClick(todoId)
+  }
+
+  handleInputBoxChange(todoId, event){
+    console.log("now editing")
+    this.props.onTaskNameEdit(todoId, event.target.value)
+    console.log(event.target.value)
+  }
+
 
   render() {
 
     let todoNodes = this.props.todos.map((todo) => {
 
-      var completeStatus = "Done"
-      if(todo.completed === "false"){
-        completeStatus = "Done"
-      }else{
-        completeStatus = "Undone"
-      }
+      let checkBoxIcon = todo.completed ? <CheckboxIconChecked /> : <CheckboxIconUnchecked />
+
+      let lineThrough = {
+        textDecoration: "line-through",
+      };
+
+
       return (
-        <div key={todo.id} >
-          {todo.taskName} completed: {todo.completed}
-          <button onClick={() => {this.handleDeleteButtonClick(todo.id)}}>delete</button>
-          <button onClick={() => {this.handleDoneButtonClick(todo.id)}}>{completeStatus}</button>
+        <div key={todo.id}>
+
+          <MuiThemeProvider>
+            <IconButton
+              onClick={() => {this.handleDoneButtonClick(todo.id)}}
+              style={{top: "6px"}}
+            >
+              {checkBoxIcon}
+            </IconButton>
+          </MuiThemeProvider>
+
+          <MuiThemeProvider muiTheme={muiTheme}>
+          <TextField
+            type="text"
+            value={todo.taskName}
+            onClick={() =>{this.handleInputBoxClick(todo.id)}}
+            onChange={this.handleInputBoxChange.bind(this, todo.id)}
+            inputStyle={todo.completed ? lineThrough : null}
+          />
+          </MuiThemeProvider>
+
+          <MuiThemeProvider>
+          <RaisedButton
+            onClick={() => {this.handleDeleteButtonClick(todo.id)}}
+            label="Delete"
+            labelPosition="before"
+            icon={<DeleteIcon />}
+            primary={true}
+            style={{marginLeft:"18px"}}
+          />
+          </MuiThemeProvider>
+
 
         </div>
       );
