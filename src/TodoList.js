@@ -10,7 +10,6 @@ import IconButton from 'material-ui/IconButton'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
-
 const muiTheme = getMuiTheme({
 
 })
@@ -68,13 +67,14 @@ class TodoList extends Component {
           <MuiThemeProvider muiTheme={muiTheme}>
           <TextField
             type="text"
-            value={todo.taskName}
+            value={todo.taskName}//ここに + して何かを加えると、変化を検知してレンダリングした際文字列が足される。
             onClick={() =>{this.handleInputBoxClick(todo.id)}}
             onChange={this.handleInputBoxChange.bind(this, todo.id)}
             inputStyle={todo.completed ? lineThrough : null}
+            key={todo.id}
+            id={String(todo.id)}
           />
           </MuiThemeProvider>
-
           <MuiThemeProvider>
           <RaisedButton
             onClick={() => {this.handleDeleteButtonClick(todo.id)}}

@@ -8,7 +8,6 @@ import AddIcon from 'material-ui/svg-icons/av/playlist-add'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
-
 class TaskForm extends Component {
   
   //cst for constructor
@@ -53,6 +52,7 @@ class TaskForm extends Component {
             style={{
             marginLeft:"58px",
             width:"240px"}}
+            name="addTask"
           />
         </MuiThemeProvider>
 

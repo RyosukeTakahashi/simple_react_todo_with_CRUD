@@ -4,6 +4,15 @@ import TaskForm from './TaskForm'
 import logo from './logo.svg';
 import './App.css';
 
+var Rebase = require('re-base');
+var base = Rebase.createClass({
+    apiKey:"AIzaSyDmB09eo03rBWVqTN2679blzhfmtnUxPdM",
+    authDomain:"reacttodo-bc26f.firebaseapp.com",
+    databaseURL: "https://reacttodo-bc26f.firebaseio.com",
+    storageBucket: "reacttodo-bc26f.appspot.com"
+})
+
+
 class App extends Component {
 
   constructor(props) {
