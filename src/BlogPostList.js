@@ -16,10 +16,10 @@ class BlogPostList extends Component {
   }
 
   componentDidMount() {
-    console.log("did mount")
+    console.log("blog post list did mount")
     axios.get('http://brains.wp.xdomain.jp/wp-json/wp/v2/posts/?per_page=3').then((response) => {
       this.setState({blogPosts: response.data})
-      console.log("api fetched")
+      console.log("wp api fetched")
     }).catch((err) => {
       console.log("error occured")
       console.log(err)
@@ -28,7 +28,7 @@ class BlogPostList extends Component {
 
 
   render() {
-    console.log(this.state.blogPosts)
+    // console.log(this.state.blogPosts)
     let postNodes = this.state.blogPosts.map((post) => {
 
       return (

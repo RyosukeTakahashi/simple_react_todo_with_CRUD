@@ -18,12 +18,31 @@
   font-size: large;
 }
 
+.App-main {
+
+  width: 50%;
+  margin: auto;
+}
+
+.chart {
+  width: 50%;
+  margin: auto;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
 .completedTask {
-
   text-decoration: line-through;
+}
+
+.TodoList {
+
+  text-align: left;
+}
+
+.QuestionForm {
+  text-align: left;
 }
