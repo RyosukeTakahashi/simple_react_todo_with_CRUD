@@ -30,12 +30,12 @@ const questions = [
     title: "欲しい機種をお選びください。",
     name: "deviceName",
     options: [
-      "iPhone6s 16GB",
-      "iPhone6s 64GB",
-      "iPhone6s 128GB",
-      "iPhone6s Plus 16GB",
-      "iPhone6s Plus 64GB",
-      "iPhone6s Plus 128GB",
+      "iPhone6S 16GB",
+      "iPhone6S 64GB",
+      "iPhone6S 128GB",
+      "iPhone6S Plus 16GB",
+      "iPhone6S Plus 64GB",
+      "iPhone6S Plus 128GB",
       "XperiaZ5",
       "XperiaZ5 Compact",
       "XperiaZ5 Premium"
@@ -137,6 +137,7 @@ class QuestionForm extends Component {
   }
   
   handleInputBoxChange(e) {
+    console.log(e.target.name)
     this.state[e.target.name] = e.target.value
     console.log(this.state[e.target.name])
   }
@@ -179,6 +180,7 @@ class QuestionForm extends Component {
     return (
       <TextField
         type="text"
+        name={question.name}
         key={question.title}
         hintText="Your Answer"
         style={styles.textField}
